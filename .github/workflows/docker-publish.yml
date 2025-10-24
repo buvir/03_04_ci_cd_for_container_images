@@ -21,8 +21,6 @@ jobs:
       contents: read
       checks: write
 
-
-
   build:
     needs: [integration]
     runs-on: ubuntu-latest
