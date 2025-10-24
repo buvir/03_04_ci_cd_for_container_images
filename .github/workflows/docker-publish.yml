@@ -16,10 +16,11 @@ env:
 jobs:
   # Call reusable workflow from other repo using the exact commit SHA (permalink)
   integration:
-    uses: ./.github/workflows/python-ci-workflow.yml
+    uses: buvir/03_04_ci_cd_for_container_images/.github/workflows/python-ci-workflow.yml@main
     permissions:
       contents: read
       checks: write
+
 
 
   build:
